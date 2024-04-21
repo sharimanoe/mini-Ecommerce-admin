@@ -3,27 +3,35 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProductList from "./components/ProductList";
+import Home from "./pages/Home";
+import NotFoundPage from "./pages/NotFoundPage";
+import { Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
+  const [rightSidePage, setPage] = useState("HomePage");
+
   return (
     <>
       <Navbar />
       <div>
         <div className="sidenav">
-          <a href="#">Products</a>
-          <a href="#">Add Product</a>
-          <a href="#">About</a>
+          <Link to="/"> Products </Link>
+          <Link to="/ProductList"> Add Product </Link>
+          <Link to="*"> About </Link>
         </div>
-        <ProductList />
+        {rightSidePage === "HomePage" && <Home />}
+        {rightSidePage === "ProductListPage" && <ProductList />}
+        {rightSidePage === "NotFoundPage" && <NotFoundPage />}
       </div>
 
       <Footer />
-      {/* 
+
       <Routes>
-        <Route path="/" element={<StudentListPage />} />
-        <Route path="/students/:studentId" element={<StudentDetailsPage />} />
-        <Route path="/profile" element={<UserProfilePage />} />
-      </Routes> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/ProductList" element={<ProductList />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </>
   );
 }

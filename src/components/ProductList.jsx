@@ -17,20 +17,28 @@ function ProductList() {
       {products.map((product) => {
         return (
           <div key={product.id} className="product-list">
-            <img
-              src={product.thumbnail}
-              alt="icon-product"
-              className="product-image"
-            />
-            <p>{product.title}</p>
-            <p>{product.price}</p>
-            <p>{product.stock}</p>
-            <button
-              onClick={() => deleteProduct(product.id)}
-              className="btn-delete"
-            >
-              Delete
-            </button>
+            <ul>
+              <li>
+                {" "}
+                <img
+                  src={product.thumbnail}
+                  alt="icon-product"
+                  className="product-image"
+                />
+              </li>
+              <li>{product.title}</li>
+              <li>{product.price}</li>
+              <li>{product.stock}</li>
+              <li>
+                {" "}
+                <button
+                  onClick={() => deleteProduct(product.id)}
+                  className="btn-delete"
+                >
+                  Delete
+                </button>
+              </li>
+            </ul>
           </div>
         );
       })}
