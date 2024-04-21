@@ -5,16 +5,16 @@
   text-align: center;
 }
 
-.logo {
+.btn-logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
+.btn-logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
+.btn-logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -28,15 +28,24 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  a:nth-of-type(2) .btn-logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-.card {
-  padding: 2em;
+.sidenav {
+  /* height: 100%; */
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
 }
 
-.read-the-docs {
-  color: #888;
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.footer-logo {
+  width: 20px;
 }
