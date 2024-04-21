@@ -9,20 +9,24 @@ import { Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function App() {
-  const [rightSidePage, setPage] = useState("HomePage");
+  const [rightSidePage, setPage] = useState("ProductListPage");
 
   return (
     <>
       <Navbar />
-      <div>
+      <div className="central-page">
         <div className="sidenav">
           <Link to="/"> Products </Link>
+          <br />
           <Link to="/ProductList"> Add Product </Link>
+          <br />
           <Link to="*"> About </Link>
         </div>
-        {rightSidePage === "HomePage" && <Home />}
-        {rightSidePage === "ProductListPage" && <ProductList />}
-        {rightSidePage === "NotFoundPage" && <NotFoundPage />}
+        <div className="righ-side">
+          {rightSidePage === "HomePage" && <Home />}
+          {rightSidePage === "ProductListPage" && <ProductList />}
+          {rightSidePage === "NotFoundPage" && <NotFoundPage />}
+        </div>
       </div>
 
       <Footer />

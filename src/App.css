@@ -1,10 +1,52 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} */
+
+/* main parts of the page */
+.navBar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ed6b0e;
+  text-align: center;
 }
 
+.central-page {
+  position: fixed;
+  width: 100%;
+  top: 147px; /* Height of the navbar */
+  bottom: 50px; /* Height of the footer */
+  overflow-y: auto; /* Enable scrolling if content exceeds sidebar height */
+  display: flex;
+}
+
+.sidenav {
+  background-color: #ed6b0e;
+  width: 215px;
+}
+
+.righ-side {
+  background-color: #4e2aed;
+  width: 100%;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ed6b0e;
+}
+
+.footer-logo {
+  width: 20px;
+}
+
+/*  End main parts of the page   */
+/* check what this code does for the navbar components */
 .btn-logo {
   height: 6em;
   padding: 1.5em;
@@ -32,20 +74,21 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+/* End - check what this code does for the navbar components */
 
-.sidenav {
-  /* height: 100%; */
-  width: 160px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #111;
+/* List of products*/
+
+.product-list {
+  display: flex;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.ul-product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.footer-logo {
-  width: 20px;
+.product-item {
+  margin-right: 10px; /* Adjust the spacing between items */
 }
