@@ -1,20 +1,20 @@
 import { useState } from "react";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProductList from "./components/ProductList";
 
 function App() {
   return (
     <>
       <Navbar />
-
-      <div class="sidenav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+      <div>
+        <div className="sidenav">
+          <a href="#">Products</a>
+          <a href="#">Add Product</a>
+          <a href="#">About</a>
+        </div>
+        <ProductList />
       </div>
 
       <Footer />
