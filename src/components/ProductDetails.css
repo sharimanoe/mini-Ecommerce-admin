@@ -1,0 +1,34 @@
+/* Form Add details of the product */
+.AddProduct-container {
+  position: fixed;
+  right: 0;
+  width: calc(100% - 182px);
+  height: calc(100% - 140px);
+  background-color: #f4f4f4;
+  overflow-y: auto; /* Enable scrolling if content exceeds sidebar height */
+}
+
+label {
+  display: block; /* Ensures label and input stack vertically */
+  margin-bottom: 10px; /* Adds space below the label */
+  margin: 0px 186px;
+}
+
+/* Style for the input */
+input {
+  width: 100%; /* Makes the input fill its container */
+  padding: 5px; /* Adds padding inside the input */
+  border: 1px solid #ed6b0e; /* Adds a border */
+  border-radius: 3px; /* Rounds the corners */
+}
+
+input::placeholder {
+  color: #bc9b84; /* Changes the color of the placeholder text */
+}
+
+input:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #ed6b0e; /* Changes the border color on focus */
+  box-shadow: 0 0 5px rgba(112, 60, 4, 0.5); /* Adds a subtle box shadow on focus */
+}
+/* Form details of the product */

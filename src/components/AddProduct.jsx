@@ -1,9 +1,12 @@
 // import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import productsData from "../assets/productsData.json";
 import { useState } from "react";
 
 function AddProduct() {
   const [products, setProducts] = useState(productsData);
+  const navigate = useNavigate();
   // const history = useHistory();
   // Initialize all the variables of my form
   const [id, setId] = useState("");
@@ -16,6 +19,7 @@ function AddProduct() {
   const [brand, setBrand] = useState("");
   const [category, setCategory] = useState("");
   const [images, setImages] = useState("");
+  console.log(products);
 
   const handleId = (e) => setId(e.target.value);
   const handleTitle = (e) => setTitle(e.target.value);
@@ -46,9 +50,8 @@ function AddProduct() {
     };
 
     // Add new student to students array
-    setProducts([...products, newProduct]);
+    setProducts([newProduct, ...products]);
     console.log(newProduct);
-    console.log(products);
 
     // Reset form fields
     setId("");
@@ -63,10 +66,10 @@ function AddProduct() {
     // setThumbnail("");
     setImages("");
 
-    //  redirect to my List of products page
-    // history.push("/ProductList/ItemDetail");
+    // Redirect to the list of products
+    // window.location.href = "/ProductList";
+    // navigate("/ProductList");
   };
-
   return (
     <>
       <div className="AddProduct-container">
@@ -174,6 +177,7 @@ function AddProduct() {
               />
             </label>
           </div>
+          {/* <button type="submit" onClick={handleClick}> */}
           <button type="submit">Add New Product</button>
         </form>
       </div>

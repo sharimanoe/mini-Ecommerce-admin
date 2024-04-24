@@ -1,0 +1,18 @@
+.sidenav {
+  background-color: #f4f4f4;
+  left: 0;
+  width: 182px;
+  height: calc(100% - -9px);
+  display: block;
+}
+
+.sidenav a {
+  padding: 10px 16px; /* Add padding to the links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 18px; /* Set the font size */
+  color: #ed6b0e; /* White text color */
+  display: block; /* Make the links appear as block elements */
+}
+.sidenav a:hover {
+  background-color: #ff8c0077; /* Darker shade of orange on hover */
+}

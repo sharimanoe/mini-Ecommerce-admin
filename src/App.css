@@ -1,80 +1,16 @@
-/* main parts of the page */
-.navBar-container {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #ed6b0e;
-  text-align: center;
-}
-
-.btn-logo {
-  width: 75px;
-  height: 50px;
-}
-
-.logo-container {
-  width: 50px;
-  height: 50px;
-}
-
-/* End of styling of the right side of the screen*/
 .middle-page {
   position: fixed;
   width: 100%;
-  top: 147px; /* Height of the navbar */
+  top: 101px; /* Height of the navbar */
   bottom: 50px; /* Height of the footer */
   /* overflow-y: auto; Enable scrolling if content exceeds sidebar height */
   display: flex;
   /* flex-direction: row; */
 }
 
-.sidenav {
-  background-color: #ed6b0e;
-  width: 215px;
-  height: 380px;
-  display: block;
-}
-
-.sidenav a {
-  padding: 10px 16px; /* Add padding to the links */
-  text-decoration: none; /* Remove underline from links */
-  font-size: 18px; /* Set the font size */
-  color: #fff; /* White text color */
-  display: block; /* Make the links appear as block elements */
-}
-.sidenav a:hover {
-  background-color: #ff8c00; /* Darker shade of orange on hover */
-}
-
-.righ-side {
-  background-color: #4e2aed;
-  width: 100%;
-}
-
-.AddProduct-container {
-  position: fixed;
-  right: 0;
-  width: 1000px;
-  height: 100%;
-  background-color: #f4f4f4;
-  overflow-y: auto; /* Enable scrolling if content exceeds sidebar height */
-}
-/* End of styling of the right side of the screen*/
-
-.footer-container {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #ed6b0e;
-}
-
-.footer-logo {
-  width: 20px;
-}
-
 /*  End main parts of the page   */
-/* check what this code does for the navbar components */
+
+/* check what this code does for the navbar components ----*/
 .btn-logo {
   height: 6em;
   padding: 1.5em;
@@ -103,109 +39,3 @@
   }
 }
 /* End - check what this code does for the navbar components */
-
-/* List of products page */
-.product-list {
-  display: flex;
-  background-color: #f8f8f8; /* Grey background */
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.ul-product-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.product-item {
-  margin-right: 10px; /* Adjust the spacing between items */
-}
-
-.ul-product-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.ul-product-list li {
-  color: #333; /* Dark grey text color */
-  margin-bottom: 5px;
-}
-
-.product-image {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-
-.btn-delete {
-  background-color: orange; /* Orange button background */
-  color: white; /* White button text color */
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.btn-delete:hover {
-  background-color: #ff7f00; /* Darker shade of orange on hover */
-}
-
-/* End List of products page*/
-
-/* Form details of the product */
-label {
-  display: block; /* Ensures label and input stack vertically */
-  margin-bottom: 10px; /* Adds space below the label */
-}
-
-/* Style for the input */
-input {
-  width: 100%; /* Makes the input fill its container */
-  padding: 5px; /* Adds padding inside the input */
-  border: 1px solid #ed6b0e; /* Adds a border */
-  border-radius: 3px; /* Rounds the corners */
-}
-
-input::placeholder {
-  color: #bc9b84; /* Changes the color of the placeholder text */
-}
-
-input:focus {
-  outline: none; /* Removes the default focus outline */
-  border-color: #ed6b0e; /* Changes the border color on focus */
-  box-shadow: 0 0 5px rgba(112, 60, 4, 0.5); /* Adds a subtle box shadow on focus */
-}
-/* Form details of the product */
-
-/* Not found page styles */
-
-.not-found-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: #fff; /* Orange background */
-}
-
-.not-found-message {
-  text-align: center;
-  color: #ed6b0e; /* White text color */
-  font-size: 24px;
-}
-
-/* End - Not found page styles */
-
-/* Home page styles */
-
-.home-container {
-  text-align: center;
-  color: #ed6b0e; /* White text color */
-  font-size: 24px;
-}
-
-/* End - Home page styles */

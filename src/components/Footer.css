@@ -1,0 +1,15 @@
+.footer-container {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  justify-content: center;
+  background-color: #ed6b0e;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 20px;
+  height: 20px;
+}

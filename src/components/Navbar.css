@@ -1,0 +1,29 @@
+.navBar-container {
+  top: 0;
+  background-color: #ed6b0e;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-logo {
+  width: 50px; /* Adjust as needed */
+}
+
+.navBar-text {
+  color: white; /* Text color */
+  font-size: 20px; /* Adjust as needed */
+  margin-left: 10px; /* Add spacing between logo and text */
+}

@@ -1,0 +1,46 @@
+.product-list {
+  position: fixed;
+  overflow-y: auto;
+  right: 0;
+  width: calc(100% - 182px);
+  background-color: #f8f8f8; /* Grey background */
+}
+
+.ul-product-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3dfdfe7;
+}
+
+.ul-product-list li {
+  color: #ed6b0e;
+  margin-bottom: 2px;
+  margin-right: 10px; /* Add spacing between list items */
+}
+
+.ul-product-list li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.btn-delete {
+  background-color: orange; /* Orange button background */
+  color: white; /* White button text color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #ff7f00; /* Darker shade of orange on hover */
+}
