@@ -6,36 +6,45 @@ import ProductList from "./components/ProductList";
 import Home from "./pages/Home";
 import NotFoundPage from "./pages/NotFoundPage";
 import { Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
+import SideBar from "./components/SideBar";
+import AddProduct from "./components/AddProduct";
+import ProductDetails from "./components/ProductDetails";
+import productsData from "./assets/productsData.json";
 
 function App() {
-  const [rightSidePage, setPage] = useState("ProductListPage");
+  // const [mainPage, setPage] = useState("Home");
+  const [products, setProduct] = useState(productsData);
 
   return (
     <>
+      {/* Construction of my page */}
+
       <Navbar />
-      <div className="central-page">
-        <div className="sidenav">
-          <Link to="/"> Products </Link>
-          <br />
-          <Link to="/ProductList"> Add Product </Link>
-          <br />
-          <Link to="*"> About </Link>
-        </div>
-        <div className="righ-side">
-          {rightSidePage === "HomePage" && <Home />}
-          {rightSidePage === "ProductListPage" && <ProductList />}
-          {rightSidePage === "NotFoundPage" && <NotFoundPage />}
-        </div>
+
+      <div className="middle-page">
+        <SideBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ProductList" element={<ProductList />} />
+          {/* path="/products" */}
+          <Route path="/ProductList/AddProduct" element={<AddProduct />} />
+          {/* path="/products/create" */}
+
+          <Route
+            path="/ProductList/ProductDetail/:productId"
+            element={<ProductDetails />}
+          />
+          {/* path="/products/:productId/details" */}
+
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+        {/* {products &&
+          products.map((product) => {
+            return <ProductDetails key={product.id} {...products} />;
+          })} */}
       </div>
 
-      <Footer />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/ProductList" element={<ProductList />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+      {/* <Footer /> */}
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import productsData from "../assets/productsData.json";
 import { useState } from "react";
 
@@ -13,24 +14,23 @@ function ProductList() {
 
   return (
     <div>
-      <p>test product </p>
       {products.map((product) => {
         return (
           <div key={product.id} className="product-list">
-            <ul>
+            <ul className="ul-product-list">
+              <Link to={`/ProductList/ProductDetail/${product.id}`}>
+                <li>
+                  <img
+                    src={product.images}
+                    alt="icon-product"
+                    className="product-image"
+                  />
+                </li>
+                <li>{product.title}</li>
+                <li>{product.price}</li>
+                <li>{product.stock}</li>
+              </Link>
               <li>
-                {" "}
-                <img
-                  src={product.thumbnail}
-                  alt="icon-product"
-                  className="product-image"
-                />
-              </li>
-              <li>{product.title}</li>
-              <li>{product.price}</li>
-              <li>{product.stock}</li>
-              <li>
-                {" "}
                 <button
                   onClick={() => deleteProduct(product.id)}
                   className="btn-delete"
