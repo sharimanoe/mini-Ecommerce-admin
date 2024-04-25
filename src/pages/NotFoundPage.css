@@ -8,8 +8,8 @@
   background-color: #fff; /* Orange background */
 }
 
-h1,
-p {
+.not-found-container h1,
+.not-found-container p {
   text-align: center;
   color: #ed6b0e; /* White text color */
   font-size: 50px;

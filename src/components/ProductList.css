@@ -44,3 +44,16 @@
 .btn-delete:hover {
   background-color: #ff7f00; /* Darker shade of orange on hover */
 }
+
+.btn-update {
+  background-color: rgb(21, 89, 43); /* Orange button background */
+  color: white; /* White button text color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background-color: rgb(12, 57, 26); /* Darker shade of orange on hover */
+}

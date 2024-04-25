@@ -13,6 +13,10 @@ function ProductList() {
     setProduct(filteredProduct);
   };
 
+  const updateProduct = (productId) => {
+    <Link to={`/ProductList/ProductDetail/${product.id}`} />;
+  };
+
   return (
     <div className="product-list">
       {products.map((product) => {
@@ -37,6 +41,12 @@ function ProductList() {
                     className="btn-delete"
                   >
                     Delete
+                  </button>
+                  <button
+                    onClick={() => updateProduct(product.id)}
+                    className="btn-update"
+                  >
+                    Update
                   </button>
                 </li>
               </ul>

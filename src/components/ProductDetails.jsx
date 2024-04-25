@@ -20,11 +20,12 @@ function ProductDetails({ idProduct }) {
         <p>Stock: {product.stock}</p>
         <p>Brand: {product.brand}</p>
         <p>Category: {product.category}</p>
-        <p>Images:{product.image}</p>
-        {/* <p>Images:</p>
-          {product.images.map((image, index) => (
-            <img key={index} src={image} alt={`Product ${index + 1}`} />
-          ))} */}
+        <p>Images:</p>
+        <img
+          src={product.images}
+          alt="product-img-detail"
+          className="product-img-detail"
+        />
       </div>
     </div>
   );

@@ -1,34 +1,37 @@
 /* Form Add details of the product */
-.AddProduct-container {
+/* .AddProduct-container {
   position: fixed;
   right: 0;
   width: calc(100% - 182px);
   height: calc(100% - 140px);
   background-color: #f4f4f4;
-  overflow-y: auto; /* Enable scrolling if content exceeds sidebar height */
+  overflow-y: auto;
+} */
+
+.ProductDetail-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-label {
-  display: block; /* Ensures label and input stack vertically */
-  margin-bottom: 10px; /* Adds space below the label */
-  margin: 0px 186px;
+.ProductDetail-container h2 {
+  color: orange;
+  margin-bottom: 20px;
 }
 
-/* Style for the input */
-input {
-  width: 100%; /* Makes the input fill its container */
-  padding: 5px; /* Adds padding inside the input */
-  border: 1px solid #ed6b0e; /* Adds a border */
-  border-radius: 3px; /* Rounds the corners */
+.ProductDetail-container div {
+  margin-top: 20px;
 }
 
-input::placeholder {
-  color: #bc9b84; /* Changes the color of the placeholder text */
+.ProductDetail-container p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-input:focus {
-  outline: none; /* Removes the default focus outline */
-  border-color: #ed6b0e; /* Changes the border color on focus */
-  box-shadow: 0 0 5px rgba(112, 60, 4, 0.5); /* Adds a subtle box shadow on focus */
+.product-img-detail {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
-/* Form details of the product */
