@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import productsData from "../assets/productsData.json";
 import { useState } from "react";
 import "./ProductList.css";
 
 function ProductList() {
   const [products, setProduct] = useState(productsData);
-
+  const navigate = useNavigate();
   const deleteProduct = (productId) => {
     const filteredProduct = products.filter((product) => {
       return product.id !== productId;
@@ -14,7 +14,9 @@ function ProductList() {
   };
 
   const updateProduct = (productId) => {
-    <Link to={`/ProductList/UpdateProduct/${productId}`} />;
+    console.log(`press bottom update product`);
+    console.log(productId);
+    navigate(`/ProductList/UpdateProduct/${productId}`);
   };
 
   return (

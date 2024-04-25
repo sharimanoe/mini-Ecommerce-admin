@@ -1,6 +1,11 @@
 .ProductDetail-container {
-  background-color: #f0f0f0; /* Grey background */
   padding: 20px;
+  position: fixed;
+  right: 0;
+  width: 450px;
+  height: calc(100% - 200px);
+  background-color: #f4f4f4;
+  overflow-y: auto;
 }
 
 .ProductDetail-container h2 {

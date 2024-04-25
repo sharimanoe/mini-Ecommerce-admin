@@ -6,7 +6,7 @@ import "./ProductDetails.css";
 function ProductDetails({ idProduct }) {
   const { productId } = useParams();
   const product = productsData.find((p) => p.id === +productId);
-  console.log(product);
+
   return (
     <div className="ProductDetail-container">
       <h2>Product Detail</h2>

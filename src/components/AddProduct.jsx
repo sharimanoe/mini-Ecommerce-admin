@@ -68,7 +68,7 @@ function AddProduct() {
 
     // Redirect to the list of products
     // window.location.href = "/ProductList";
-    // navigate("/ProductList");
+    navigate("/ProductList");
   };
   return (
     <>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import productsData from "../assets/productsData.json";
 import { useParams } from "react-router-dom";
 import "./UpdateProduct.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function UpdateProduct({ idProduct }) {
   const { productId } = useParams();
@@ -17,9 +18,13 @@ function UpdateProduct({ idProduct }) {
     }));
   };
 
+  const saveProduct = () => {
+    navigate(`/ProductList`);
+  };
+
   return (
     <div className="ProductDetail-container">
-      <h2>Product Detail</h2>
+      <h2>Inser the modificacion and press save</h2>
       <div>
         <p>ID: {product.id}</p>
         <p>
@@ -103,18 +108,10 @@ function UpdateProduct({ idProduct }) {
             onChange={handleChange}
           />
         </p>
-        <button
-        //   onClick={() => deleteProduct(product.id)}
-        //   className="btn-delete"
-        >
-          Save Changes
-        </button>
-        {/* <img
-          src={product.images}
-          alt="product-img-detail"
-          className="product-img-detail"
-        /> */}
       </div>
+      <button onClick={() => saveProduct()} className="btn-delete">
+        Save Changes
+      </button>
     </div>
   );
 }
