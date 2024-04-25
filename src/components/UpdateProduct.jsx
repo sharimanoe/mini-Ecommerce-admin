@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import productsData from "../assets/productsData.json";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./UpdateProduct.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function UpdateProduct({ idProduct }) {
+  const navigate = useNavigate();
   const { productId } = useParams();
   const [product, setProduct] = useState(
     productsData.find((p) => p.id === +productId)
