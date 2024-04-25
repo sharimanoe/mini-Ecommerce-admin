@@ -1,0 +1,20 @@
+.ProductDetail-container {
+  background-color: #f0f0f0; /* Grey background */
+  padding: 20px;
+}
+
+.ProductDetail-container h2 {
+  color: orange; /* Orange text */
+}
+
+.ProductDetail-container input[type="text"],
+.ProductDetail-container input[type="number"] {
+  border: 1px solid orange; /* Orange border for input fields */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.ProductDetail-container img.product-img-detail {
+  border: 2px solid orange; /* Orange border for the product image */
+  margin-top: 10px;
+}

@@ -1,8 +1,8 @@
 // import { useHistory } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
 import productsData from "../assets/productsData.json";
 import { useState } from "react";
+import "./AddProduct.css";
 
 function AddProduct() {
   const [products, setProducts] = useState(productsData);

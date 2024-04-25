@@ -1,0 +1,32 @@
+.AddProduct-container {
+  background-color: #f0f0f0; /* Gray background */
+  padding: 20px;
+}
+
+.AddProduct-container p {
+  color: orange; /* Orange text */
+}
+
+.AddProduct-container label {
+  color: orange; /* Orange text for labels */
+}
+
+.AddProduct-container input[type="text"],
+.AddProduct-container input[type="url"] {
+  border: 1px solid orange; /* Orange border for input fields */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.AddProduct-container button[type="submit"] {
+  background-color: orange; /* Orange button background */
+  color: white; /* White text for button */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.AddProduct-container button[type="submit"]:hover {
+  background-color: #ff9933; /* Darker shade of orange on hover */
+}

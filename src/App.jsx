@@ -10,6 +10,7 @@ import SideBar from "./components/SideBar";
 import AddProduct from "./components/AddProduct";
 import ProductDetails from "./components/ProductDetails";
 import productsData from "./assets/productsData.json";
+import UpdateProduct from "./components/UpdateProduct";
 
 function App() {
   // const [mainPage, setPage] = useState("Home");
@@ -35,6 +36,10 @@ function App() {
             element={<ProductDetails />}
           />
           {/* path="/products/:productId/details" */}
+          <Route
+            path="/ProductList/UpdateProduct/:productId"
+            element={<UpdateProduct />}
+          />
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
