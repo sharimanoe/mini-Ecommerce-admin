@@ -13,8 +13,22 @@ import productsData from "./assets/productsData.json";
 import UpdateProduct from "./components/UpdateProduct";
 
 function App() {
-  // const [mainPage, setPage] = useState("Home");
   const [products, setProduct] = useState(productsData);
+
+  const handleAddProduct = (newProduct) => {
+    setProduct((prevProducts) => [newProduct, ...prevProducts]);
+  };
+
+  const handleUpdateProduct = (updProduct, updId) => {
+    const updatedProducts = products.map((product) => {
+      if (product.id === updId) {
+        console.log(updProduct);
+        return updProduct;
+      }
+      return product;
+    });
+    setProduct(updatedProducts);
+  };
 
   return (
     <>
@@ -26,9 +40,22 @@ function App() {
         <SideBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/ProductList" element={<ProductList />} />
+          <Route
+            path="/ProductList"
+            element={
+              <ProductList products={products} setProduct={setProduct} />
+            }
+          />
           {/* path="/products" */}
-          <Route path="/ProductList/AddProduct" element={<AddProduct />} />
+          <Route
+            path="/ProductList/AddProduct"
+            element={
+              <AddProduct
+                products={products}
+                handleAddProduct={handleAddProduct}
+              />
+            }
+          />
           {/* path="/products/create" */}
 
           <Route
@@ -38,7 +65,12 @@ function App() {
           {/* path="/products/:productId/details" */}
           <Route
             path="/ProductList/UpdateProduct/:productId"
-            element={<UpdateProduct />}
+            element={
+              <UpdateProduct
+                products={products}
+                handleUpdateProduct={handleUpdateProduct}
+              />
+            }
           />
 
           <Route path="*" element={<NotFoundPage />} />

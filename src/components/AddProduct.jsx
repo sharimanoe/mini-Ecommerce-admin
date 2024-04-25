@@ -3,9 +3,11 @@ import { useNavigate } from "react-router-dom";
 import productsData from "../assets/productsData.json";
 import { useState } from "react";
 import "./AddProduct.css";
+// import "./../src/App.jsx";
+import "./../App.jsx";
 
-function AddProduct() {
-  const [products, setProducts] = useState(productsData);
+function AddProduct({ handleAddProduct, products }) {
+  // const [products, setProducts] = useState(productsData);
   const navigate = useNavigate();
   // const history = useHistory();
   // Initialize all the variables of my form
@@ -50,8 +52,10 @@ function AddProduct() {
     };
 
     // Add new student to students array
-    setProducts([newProduct, ...products]);
-    console.log(newProduct);
+    // setProducts([newProduct, ...products]);
+    // console.log(newProduct);
+
+    handleAddProduct(newProduct);
 
     // Reset form fields
     setId("");

@@ -1,10 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
-import productsData from "../assets/productsData.json";
+// import productsData from "../assets/productsData.json";
 import { useState } from "react";
 import "./ProductList.css";
 
-function ProductList() {
-  const [products, setProduct] = useState(productsData);
+function ProductList({ products, setProduct }) {
+  // const [products, setProduct] = useState(productsData);
   const navigate = useNavigate();
   const deleteProduct = (productId) => {
     const filteredProduct = products.filter((product) => {

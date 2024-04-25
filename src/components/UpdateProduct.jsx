@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import productsData from "../assets/productsData.json";
+// import productsData from "../assets/productsData.json";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./UpdateProduct.css";
 import { Link } from "react-router-dom";
+import "./../App.jsx";
 
-function UpdateProduct({ idProduct }) {
+function UpdateProduct({ products, handleUpdateProduct }) {
   const navigate = useNavigate();
   const { productId } = useParams();
   const [product, setProduct] = useState(
-    productsData.find((p) => p.id === +productId)
+    // productsData.find((p) => p.id === +productId)
+    products.find((p) => p.id === +productId)
   );
 
   const handleChange = (e) => {
@@ -21,6 +23,10 @@ function UpdateProduct({ idProduct }) {
   };
 
   const saveProduct = () => {
+    console.log(`product: ` + product.title);
+    console.log(`complete product: ` + product);
+    //saving changes in the father
+    handleUpdateProduct(product, product.id);
     navigate(`/ProductList`);
   };
 

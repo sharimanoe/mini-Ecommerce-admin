@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 20px;
   background-color: #f0f0f0; /* Grey background */
+  background-image: "/src/assets/complete-logo.jpg";
 }
 
 .header h1 {
@@ -11,8 +12,13 @@
 }
 
 .features h2,
-.contact-info h2,
 .newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: orange; /* Orange details */
+}
+
+.contact-info h2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: orange; /* Orange details */
