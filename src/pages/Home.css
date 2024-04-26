@@ -1,9 +1,18 @@
 .home-container {
-  max-width: 800px;
+  width: calc(100% - 184px);
+  height: calc(100% - 140px);
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f0f0f0; /* Grey background */
+  padding: 0px;
+  background-color: #f4f4f4;
   background-image: "/src/assets/complete-logo.jpg";
+  overflow-y: auto;
+  color: rgb(80, 76, 76);
+  /* display: flex; */
+  justify-content: center;
+}
+
+.image-home {
+  opacity: 0.5;
 }
 
 .header h1 {
@@ -15,17 +24,17 @@
 .newsletter h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: orange; /* Orange details */
+  color: #ed6b0e; /* Orange details */
 }
 
 .contact-info h2 {
-  font-size: 24px;
+  font-size: 17px;
   margin-bottom: 10px;
-  color: orange; /* Orange details */
+  color: #ed6b0e; /* Orange details */
 }
 
 .features ul {
-  list-style-type: none;
+  list-style-type: lower-greek;
   padding: 0;
 }
 
@@ -34,12 +43,14 @@
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 225px;
   height: auto;
   margin-top: 20px;
+  justify-content: center;
 }
 
-.newsletter p {
-  margin-bottom: 20px;
-  color: orange; /* Orange details */
+.contact-info {
+  padding: 0 0 0 1000px;
+  font-size: 11px;
+  margin-bottom: 10px;
 }

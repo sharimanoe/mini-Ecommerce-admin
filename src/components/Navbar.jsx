@@ -12,7 +12,7 @@ function Navbar() {
               <img src={logo} alt="Logo" className="btn-logo" />
             </button>
           </Link>
-          <span className="navBar-text">Admin Tools</span>
+          <span className="navBar-text">User Admin</span>
         </div>
       </nav>
     </div>

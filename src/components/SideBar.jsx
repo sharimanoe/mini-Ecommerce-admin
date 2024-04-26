@@ -10,8 +10,6 @@ function SideBar() {
       <br />
       <Link to="/ProductList/AddProduct"> Add Product </Link>
       <br />
-      {/* <Link to="/ProductList/UpdateProduct/1"> Update product </Link>
-      <br /> */}
       <Link to="*"> About </Link>
     </div>
   );

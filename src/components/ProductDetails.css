@@ -1,27 +1,29 @@
-/* Form Add details of the product */
-/* .AddProduct-container {
-  position: fixed;
-  right: 0;
+.ProductDetail-container {
+  background-color: white;
+  padding: 20px;
   width: calc(100% - 182px);
   height: calc(100% - 140px);
-  background-color: #f4f4f4;
   overflow-y: auto;
-} */
+}
 
-.ProductDetail-container {
+.ProductDetail {
   background-color: #f2f2f2;
-  padding: 20px;
   border-radius: 8px;
+  margin: 0 136px;
+  border: 2px #dad6d6 solid;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .ProductDetail-container h2 {
-  color: orange;
+  color: #ed6b0e;
   margin-bottom: 20px;
+  margin: 5px 302px;
 }
 
-.ProductDetail-container div {
+/* .ProductDetail-container div {
   margin-top: 20px;
-}
+} */
 
 .ProductDetail-container p {
   margin: 10px 0;

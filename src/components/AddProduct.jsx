@@ -79,7 +79,7 @@ function AddProduct({ handleAddProduct, products }) {
       <div className="AddProduct-container">
         <p>Enter product details</p>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="AddProduct-labels">
             <label>
               Id:
               <input
@@ -90,6 +90,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handleId}
               />
             </label>
+            <br />
             <label>
               Title:
               <input
@@ -100,6 +101,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handleTitle}
               />
             </label>
+            <br />
             <label>
               Description:
               <input
@@ -110,6 +112,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handleDescription}
               />
             </label>
+            <br />
             <label>
               Price:
               <input
@@ -120,6 +123,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handlePrice}
               />
             </label>
+            <br />
             <label>
               Percentage:
               <input
@@ -130,6 +134,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handlePercentage}
               />
             </label>
+            <br />
             <label>
               Rating:
               <input
@@ -140,6 +145,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handleRating}
               />
             </label>
+            <br />
             <label>
               Stock:
               <input
@@ -150,6 +156,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handleStock}
               />
             </label>
+            <br />
             <label>
               Brand:
               <input
@@ -160,6 +167,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handleBrand}
               />
             </label>
+            <br />
             <label>
               Category:
               <input
@@ -170,6 +178,7 @@ function AddProduct({ handleAddProduct, products }) {
                 onChange={handleCategory}
               />
             </label>
+            <br />
             <label>
               Images:
               <input

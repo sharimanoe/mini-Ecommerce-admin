@@ -75,10 +75,6 @@ function App() {
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        {/* {products &&
-          products.map((product) => {
-            return <ProductDetails key={product.id} {...products} />;
-          })} */}
       </div>
 
       <Footer />

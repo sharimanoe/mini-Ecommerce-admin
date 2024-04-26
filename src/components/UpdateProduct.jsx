@@ -31,9 +31,9 @@ function UpdateProduct({ products, handleUpdateProduct }) {
   };
 
   return (
-    <div className="ProductDetail-container">
-      <h2>Inser the modificacion and press save</h2>
-      <div>
+    <div className="UpdateProduct-container">
+      <h2>Insert the modification and press save</h2>
+      <div className="UpdateProduct-form">
         <p>ID: {product.id}</p>
         <p>
           Title:{" "}
@@ -117,7 +117,7 @@ function UpdateProduct({ products, handleUpdateProduct }) {
           />
         </p>
       </div>
-      <button onClick={() => saveProduct()} className="btn-delete">
+      <button onClick={() => saveProduct()} className="btn-save">
         Save Changes
       </button>
     </div>

@@ -1,25 +1,49 @@
-.ProductDetail-container {
-  padding: 20px;
-  position: fixed;
+.UpdateProduct-container {
+  padding: 10px;
   right: 0;
-  width: 450px;
+  /* width: 450px; */
+  width: calc(100% - 380px);
   height: calc(100% - 200px);
-  background-color: #f4f4f4;
+  background-color: white;
   overflow-y: auto;
+  margin: 0 108px;
 }
 
-.ProductDetail-container h2 {
-  color: orange; /* Orange text */
+.UpdateProduct-form {
+  background-color: #f4f4f4;
+  border: 2px #dad6d6 solid;
+  border-radius: 5px;
+  margin: 0 108px;
 }
 
-.ProductDetail-container input[type="text"],
-.ProductDetail-container input[type="number"] {
-  border: 1px solid orange; /* Orange border for input fields */
+.UpdateProduct-container h2 {
+  color: #ed6b0e;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.UpdateProduct-container input[type="text"],
+.UpdateProduct-container input[type="number"] {
+  border: 1px solid #ed6b0e;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-.ProductDetail-container img.product-img-detail {
-  border: 2px solid orange; /* Orange border for the product image */
+.UpdateProduct-container img.product-img-detail {
+  border: 2px solid #ed6b0e;
   margin-top: 10px;
+}
+
+.btn-save {
+  background-color: orange; /* Orange button background */
+  color: white; /* White button text color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px 162px;
+}
+
+.btn-save:hover {
+  background-color: #ff7f00; /* Darker shade of orange on hover */
 }

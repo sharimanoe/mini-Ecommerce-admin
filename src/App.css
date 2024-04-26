@@ -1,14 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Bradley+Hand&display=swap");
+
+/* General styles*/
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .middle-page {
   position: fixed;
   width: 100%;
-  top: 101px; /* Height of the navbar */
-  bottom: 50px; /* Height of the footer */
-  /* overflow-y: auto; Enable scrolling if content exceeds sidebar height */
+  top: calc(100% - 524px); /* Height of the navbar */
+  bottom: calc(100% - 776px); /* Height of the footer */
+  /*overflow-y: auto; Enable scrolling if content exceeds sidebar height */
   display: flex;
-  /* flex-direction: row; */
 }
-
-/*  End main parts of the page   */
 
 /* check what this code does for the navbar components ----*/
 .btn-logo {

@@ -21,6 +21,13 @@ function ProductList({ products, setProduct }) {
 
   return (
     <div className="product-list">
+      <ul className="ul-header">
+        <li>Image</li>
+        <li>Title</li>
+        <li>Prices</li>
+        <li>Stock</li>
+        <li>Options </li>
+      </ul>
       {products.map((product) => {
         return (
           <div key={product.id}>

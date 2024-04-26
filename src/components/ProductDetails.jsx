@@ -10,7 +10,7 @@ function ProductDetails({ idProduct }) {
   return (
     <div className="ProductDetail-container">
       <h2>Product Detail</h2>
-      <div>
+      <div className="ProductDetail">
         <p>ID: {product.id}</p>
         <p>Title: {product.title}</p>
         <p>Description: {product.description}</p>
